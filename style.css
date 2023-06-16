@@ -23,6 +23,11 @@ body{
     top: 50%;
 }
 
+.app-title {
+  color: #172039;
+  font-size: 1.6em;
+}
+
 .input-wrapper{
     display: grid;
     grid-template-columns: 9fr 3fr;
@@ -55,9 +60,33 @@ button{
 
 p{
     text-align: center;
-    color: red;
+    color: #ffffff;
     font-weight: 400;
     padding: 1em 0;
     border-radius: 0.5em;
     transition: 0.5s;
+}
+
+p span{
+font-weight: 500;
+font-style: italic;
+}
+
+.success{
+    background-color: #01bd5f;
+    animation: pop 0.4s;
+}
+
+.error{
+    background-color: #f52a3b;
+    animation: pop 0.4s;
+}
+
+@keyframes pop{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
